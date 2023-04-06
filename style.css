@@ -1,0 +1,109 @@
+:root{
+    --base-color: rgb(160, 69, 160);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    /* background-color: var(--base-color); */
+    background-image: url('background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 20px;
+    text-align: center;
+    background-color: violet;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    padding: 4% 8%;
+  }
+  .heading{
+    text-decoration: underline;
+    color: var(--base-color);
+    margin-bottom: em;
+  }
+  
+  .input-box {
+    position: relative;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 4px 0;
+    padding-left: 20px;
+    margin-left: 15px;
+  }
+  .input-box::before{
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background-color: var(--base-color);
+  border-radius: 8px 0 0 8px;
+  }
+  
+  
+  input {
+    background: transparent;
+    border: none;
+    border-left: 2px solid #999;
+    padding: 12px 10px;
+    margin-left: 8px;
+    font-size: 16px;
+  }
+  input:focus{
+    outline: none;
+  }
+  ion-icon{
+    position: relative;
+    left: 0px;
+    margin-top: 4px;
+    zoom: 120%;
+    margin-left: 12px;
+  }
+  .btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: violet;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Styles for desktop */
+  @media screen and (min-width: 768px) {
+    .input-box {
+      display: inline-block;
+      max-width: calc(50%, - 10px);
+      margin-right: 20px;
+    }
+  
+    .input-box:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  /* Styles for mobile */
+  @media screen and (max-width: 767px) {
+    .input-box {
+      display: block;
+      max-width: 80%;
+      padding-left: 0;
+    }
+    form{
+        text-align: center;
+    }
+  }
+
+
+
+  

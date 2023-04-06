@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        :root{
+    --base-color: rgb(160, 69, 160);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    /* background-color: var(--base-color); */
+    background-image: url('background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 20px;
+    text-align: center;
+    background-color: violet;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    padding: 4% 8%;
+  }
+  .heading{
+    text-decoration: underline;
+    margin-bottom: 1.5em;
+    color: var(--base-color);
+  }
+  
+  .input-box {
+    position: relative;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 4px 0;
+    padding-left: 20px;
+    margin-left: 15px;
+  }
+  .input-box::before{
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background-color: var(--base-color);
+  border-radius: 8px 0 0 8px;
+  }
+  
+  
+  input {
+    background: transparent;
+    border: none;
+    border-left: 2px solid #999;
+    padding: 12px 10px;
+    margin-left: 8px;
+    font-size: 16px;
+  }
+  input:focus{
+    outline: none;
+  }
+  ion-icon{
+    position: relative;
+    left: 0px;
+    margin-top: 4px;
+    zoom: 120%;
+    margin-left: 12px;
+  }
+  .btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: violet;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Styles for desktop */
+  @media screen and (min-width: 768px) {
+    .input-box {
+      display: inline-block;
+      max-width: calc(50%, - 10px);
+      margin-right: 20px;
+    }
+  
+    .input-box:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  /* Styles for mobile */
+  @media screen and (max-width: 767px) {
+    .input-box {
+      display: block;
+      max-width: 80%;
+      padding-left: 0;
+    }
+    form{
+        text-align: center;
+    }
+  }
+
+
+
+  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Signup Into Your Account</h1>
+       <form action="#" method="post">
+        <div class="input-box">
+            <label for="fname"><span class="icon"><ion-icon name="person-outline"></label>
+            <input name="fname" type="text" required placeholder="Enter your First Name Here">  
+        </div>
+        <div class="input-box">
+            <label for="lname"><span class="icon"><ion-icon name="person-outline"></label>
+            <input name="lname" type="text" required placeholder="Enter your Last Name Here">
+        </div>
+        <div class="input-box">
+            <label for="email"><span class="icon"><ion-icon name="mail-outline"></label>
+            <input name="email" type="email" required placeholder="Enter your Email Address">
+        </div>
+        <div class="input-box">
+            <label for="phone"><span class="icon"><ion-icon name="phone-portrait-outline"></ion-icon></span></label>
+            <input name="phone" type="number" required placeholder="Enter your Mobile number here"> 
+        </div>
+        <div class="input-box">
+            <label for="password"><span class="icon"><ion-icon name="key-outline"></ion-icon></span></label>
+            <input name="password" type="password" required placeholder="Enter your password here">    
+        </div>
+        <div class="input-box">
+            <label for="password"><span class="icon"><ion-icon name="key-outline"></ion-icon></span></label>
+            <input name="password" type="password" required placeholder="Retype your password here">    
+        </div>
+        
+            <button type="submit" class="btn">Signup</button>
+        
+        
+        </form> 
+    </div>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
